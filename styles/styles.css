@@ -1,0 +1,10 @@
+:root {
+  --background-black: #151515;
+  --background-gray: #242424;
+  --font-color: #FFFFFF;
+  --underline-color: #65D3AA;
+}
+
+.underline {
+  text-decoration: underline var(--underline-color);
+}

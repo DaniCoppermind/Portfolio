@@ -58,9 +58,9 @@ main {
 
 #welcome-section {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .text-container {
@@ -88,7 +88,7 @@ main {
 .image-container {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 

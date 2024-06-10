@@ -51,29 +51,50 @@ a {
 
 #welcome-section {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
 }
 
-#welcome-section div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+.text-container {
+  flex: 1;
+  margin-right: 20px;
+  align-self: flex-start;
 }
 
-#welcome-section h2 {
-  font-size: 50px;
-  margin-bottom: 0;
-}
-
-#welcome-section p {
-  font-size: 20px;
-  color: var(--p-color);
-  width: 60%;
+.text-container h2 {
+  width: 200%;
+  font-size: 5rem;
+  margin-bottom: 1rem;
 }
 
 .underline {
   text-decoration: underline var(--underline-color) 2.5px;
 }
+
+.text-container p {
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+  width: 60%;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  z-index: -1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: var(--background-gray);
+}
+
+
 
 /* DESIGN PHONE */
 

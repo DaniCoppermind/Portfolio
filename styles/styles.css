@@ -11,11 +11,17 @@ body {
   color: var(--font-color);
   font-family: 'Libre Caslon Text', serif;
 
-  padding: 6px 70px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
+}
+
+main {
+  padding: 7px 70px;
 }
 
 /* Navbar */
@@ -24,6 +30,7 @@ a {
   display: flex;
   align-content: center;
   justify-content: space-between;
+  padding: 12px 70px;
 }
 
 #navbar h1 {
@@ -100,7 +107,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-columns: auto;
-  
+
   text-align: left;
   border-top: 2px solid var(--p-color);
   margin: 2rem 0;
@@ -135,3 +142,110 @@ a {
   height: 425px;
 }
 
+/* Contact */
+
+#contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 70px 50px 70px;
+  background-color: var(--background-gray);
+}
+
+/* Text */
+
+.text-contact {
+  align-self: flex-start;
+}
+
+.text-contact h2 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.text-contact p {
+  font-size: 1.5rem;
+  width: 70%;
+}
+
+/* Form */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group input[type="text"], input[type="email"], textarea {
+  width: 40vw;
+}
+
+textarea {
+  width: 40vw;
+  height: 110px;
+}
+
+button[type="submit"] {
+  color: var(--background-gray);
+  background: #65d3aa;
+  font-family: inherit;
+  border-radius: 0.9em;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 0 0 1.6em -0.6em #65d3aa;
+  height: 2.8em;
+}
+
+button[type="submit"]:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em #65d3aa;
+}
+
+button[type="submit"]:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em #65d3aa;
+}
+
+/* Footer */
+
+footer {
+  padding: 14px 70px;
+  background-color: var(--background-gray);
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 2px solid var(--p-color);
+}
+
+.social-links ul {
+  display: flex;
+  gap: 40px;
+
+  list-style: none;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+}
+
+/* icons */
+
+.footer-icon:hover {
+  animation: spinAround 2s linear infinite;
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

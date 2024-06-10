@@ -1,10 +1,84 @@
 :root {
   --background-black: #151515;
   --background-gray: #242424;
-  --font-color: #FFFFFF;
-  --underline-color: #65D3AA;
+  --font-color: #ffffff;
+  --p-color: #808080;
+  --underline-color: #65d3aa;
+}
+
+body {
+  background-color: var(--background-black);
+  color: var(--font-color);
+  font-family: 'Libre Caslon Text', serif;
+
+  padding: 6px 70px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+#navbar h1 {
+  font-family: monospace, serif;
+  font-size: 22px;
+}
+
+#navbar a {
+  color: var(--font-color);
+}
+
+#navbar a:hover {
+  text-decoration: underline var(--underline-color);
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+
+  gap: 42px;
+  list-style-type: none;
+}
+
+/* #welcome-section */
+
+#welcome-section {
+  display: flex;
+}
+
+#welcome-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#welcome-section h2 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+#welcome-section p {
+  font-size: 20px;
+  color: var(--p-color);
+  width: 60%;
 }
 
 .underline {
-  text-decoration: underline var(--underline-color);
+  text-decoration: underline var(--underline-color) 2.5px;
+}
+
+/* DESIGN PHONE */
+
+@media only screen and (max-width: 360px) {
+  body {
+    padding: 0;
+  }
 }

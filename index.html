@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/uiverse.css" />
     <title>DaniCoppermind Portfolio</title>
   </head>
   <body>
-    <header id="">
-      <h1>DaniCoppermind</h1>
-      <nav id="navbar">
-        <ul>
-          <li><a class="nav-link" href="#experience">Experience</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#contact">Contact Me</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav id="navbar">
+      <h1>Danicoppermind</h1>
+      <ul>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
     <main>
       <section id="welcome-section">
         <div>
@@ -25,11 +24,30 @@
           <p>
             Front-end developer passionate about building accessible web apps.
           </p>
-          <img src="./assets/images/daniel.png" alt="Daniel García" width="300" height="350">
+          <button class="contactButton" onclick="sendEmail()">
+            Contact Me
+            <div class="iconButton">
+              <svg
+                height="24"
+                width="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </button>
         </div>
-        <a href="mailto:danielenrique902@hotmail.com" target="_blank"
-          >Contact Me</a
-        >
+        <img
+          src="./assets/images/daniel.png"
+          alt="Daniel García"
+          width="300"
+          height="350"
+        />
       </section>
       <hr />
       <section id="experience">
@@ -190,4 +208,5 @@
       </div>
     </footer>
   </body>
+  <script src="code.js"></script>
 </html>

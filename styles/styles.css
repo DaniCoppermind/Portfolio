@@ -42,7 +42,7 @@ main {
   color: var(--p-color);
   text-decoration: underline var(--underline-color);
   cursor: none;
-  transition: 0.2s;  
+  transition: 0.2s;
 }
 
 #navbar a {
@@ -183,7 +183,9 @@ main {
   gap: 12px;
 }
 
-.form-group input[type="text"], input[type="email"], textarea {
+.form-group input[type='text'],
+input[type='email'],
+textarea {
   width: 40vw;
 }
 
@@ -192,7 +194,7 @@ textarea {
   height: 110px;
 }
 
-button[type="submit"] {
+button[type='submit'] {
   color: var(--background-gray);
   background: #65d3aa;
   font-family: inherit;
@@ -203,12 +205,12 @@ button[type="submit"] {
   height: 2.8em;
 }
 
-button[type="submit"]:hover {
+button[type='submit']:hover {
   transform: translate(-0.05em, -0.05em);
   box-shadow: 0.15em 0.15em #65d3aa;
 }
 
-button[type="submit"]:active {
+button[type='submit']:active {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em #65d3aa;
 }
@@ -252,5 +254,116 @@ footer {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Phone 360x800 */
+
+@media screen and (max-width: 800px) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  #welcome-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .text-container h2 {
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    margin-left: 13px;
+  }
+
+  .text-container p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  #experience {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    text-align: center;
+    margin-right: 65px;
+  }
+
+  #projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+
+  #contact {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .text-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-links ul {
+    padding: 0;
+  }
+}
+
+/* Tabled 768x1024 */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: red;
   }
 }

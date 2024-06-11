@@ -38,6 +38,13 @@ main {
   font-size: 22px;
 }
 
+#navbar h1:hover {
+  color: var(--p-color);
+  text-decoration: underline var(--underline-color);
+  cursor: none;
+  transition: 0.2s;  
+}
+
 #navbar a {
   color: var(--font-color);
 }
@@ -106,12 +113,10 @@ main {
 #experience {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-columns: auto;
 
-  text-align: left;
   border-top: 2px solid var(--p-color);
-  margin: 2rem 0;
-  padding: 2rem 0;
+  margin: 2rem auto 2rem 3rem;
+  padding: 2rem auto;
 }
 
 #experience h3 {
